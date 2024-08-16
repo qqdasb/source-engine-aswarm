@@ -4,8 +4,8 @@ on: [push, pull_request]
 
 jobs:
 
-  build-android-armv7a:
-    runs-on: ubuntu-20.04
+  build-android-armv8a:
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
