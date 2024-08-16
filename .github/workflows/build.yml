@@ -12,3 +12,8 @@ jobs:
     - name: Build android-armv8a
       run: |
         scripts/build-android-armv8a.sh
+    - name: 'Upload config-log'
+      uses: actions/upload-artifact@v3
+      with:
+        name: config-log
+        path: /home/runner/work/source-engine-aswarm/source-engine-aswarm/build/config.log
