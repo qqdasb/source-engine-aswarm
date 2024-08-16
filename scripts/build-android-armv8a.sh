@@ -9,5 +9,5 @@ sudo apt-get install -f -y libopenal-dev g++-multilib gcc-multilib libpng-dev li
 export ANDROID_NDK_HOME=$PWD/android-ndk-r10e/
 export NDK_HOME=$PWD/android-ndk-r10e/
 export PATH=$PWD/clang+llvm-11.1.0-x86_64-linux-gnu-ubuntu-16.04/bin:$PATH
-./waf configure -T release --android=aarch64,host,21 --togles --disable-warns &&
+./waf configure -T release --android=aarch64,host,21 --togles --disable-warns -8 &&
 ./waf build
